@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Lato, sans-serif;
+}
+
+header a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #fff;
+}
+
+header a:hover {
+	opacity: 1;
+}
+
+ul,
+nav {
+	list-style: none;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	padding: 50px 0;
+
+}
+
+header nav {
+	display: flex;
+}
+
+header .brand {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+header nav li {
+	margin: 0 30px;
+
+}
+
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	min-height: 600px;
+	height: 100vh;
+
+}
+
+.hero-image {
+	background-image: url("https://source.unsplash.com/07uiqD9LS6U");
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+
+}
+
+.hero-content {
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.1rem;
+}
+
+.hero-content h1 {
+	font-size: 100px;
+}
+
+.hero-content h2 {
+	font-size: 15px;
+	padding-top: 20px;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.location h1,
+.about h1 {
+	font-size: 70px;
+}
+
+.location p,
+.about p {
+	padding: 50px 0;
+}
+
+hr {
+	height: 2px;
+	width: 100px;
+	border: 0;
+	background-color: #000;
+	margin: 0 auto 50px auto;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.grid li{
+	display: flex;
+	align-items: center;
+	height: 350px;
+	padding: 20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	font-size: 30px;
+	flex-basis: 100%;
+
+}
+
+.grid li div {
+	background-color:rgba(153,153,153,0.6);
+	margin: 0 auto;
+	line-height: 50px;
+	height: 50px;
+	width: 170px;
+}
+
+@media (min-width: 700px) {
+	.grid {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.grid li {
+		flex-basis: 50%;
+	}
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0 20px;
+}
+
+.location {
+	text-align: center;
+	padding: 20px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0 20px 0;
+	opacity: 0.5;
+	line-height: 30px;
+}
